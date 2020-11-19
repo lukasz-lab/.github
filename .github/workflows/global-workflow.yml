@@ -1,0 +1,15 @@
+name: Global workflow to rule all other worklows
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: derberg/global-actions-support@a582213e3942c51248d317a2e7f8fc3e4a328aa9
