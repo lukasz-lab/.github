@@ -12,7 +12,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: derberg/global-actions-support@1db6d136506c89cdf7c14f1799f9bc9de843454d
+      - uses: derberg/global-actions-support@0eb9bd960226f4aa67f41c09c17eee67097c360f
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
           files_to_ignore: global-workflow.yml
+          repos_to_ignore: website, sunshine
