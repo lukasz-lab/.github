@@ -1,4 +1,4 @@
-name: Global workflow to rule all other worklows
+name: Global workflow to rule all other workflows
 
 on:
   push:
@@ -6,12 +6,12 @@ on:
 
 jobs:
 
-  build:
+  replicate_changes:
 
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
-      - uses: derberg/global-actions-support@9933da4c84823cdf8c5f7e629d782fd123948c1e
+      - uses: derberg/global-actions-support@3c64c1f94e07de94590cb9cb3b91bf954a986618
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.CUSTOM_TOKEN }}
