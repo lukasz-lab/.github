@@ -1,10 +1,9 @@
 name: Global workflow to rule all other workflows
 
 on:
-  #push:
-  #  branches: [ master ]
-  issues:
-    types: [opened, edited, milestoned]
+  push:
+    branches: [ master ]
+
 jobs:
 
   replicate_changes:
@@ -13,6 +12,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: derberg/global-actions-support@2e9dd449b6718c3dabfbf3231e9c5b5c878e594c
+      - uses: derberg/global-actions-support@1dfd678368d8e182ed176b2fd8ee09c6c08b510b
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
