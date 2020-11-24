@@ -12,6 +12,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: derberg/global-actions-support@fa9713be65ebe8493b46bc5b38b0d224014aca90
+      - uses: derberg/global-actions-support@9a4e9676898483000f62dfcafe909e085bb5038f
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
