@@ -17,3 +17,6 @@ jobs:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
           files_to_ignore: global-workflow.yml
           repos_to_ignore: website, sunshine
+          committer_username: santiago-bernabeu
+          committer_email: my-email@me.com
+          commit_message: "ci: update global workflows"
