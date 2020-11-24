@@ -14,4 +14,4 @@ jobs:
       - uses: actions/checkout@v2
       - uses: derberg/global-actions-support@1dfd678368d8e182ed176b2fd8ee09c6c08b510b
         with:
-          github_token: ${{ secrets.CUSTOM_TOKEN }}
+          github_token: ${{ secrets.CUSTOM_TOKENo }}
