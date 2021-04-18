@@ -3,6 +3,7 @@ name: Global workflow to rule all other workflows
 on:
   push:
     branches: [ master ]
+  workflow_dispatch: {}
 
 jobs:
 
