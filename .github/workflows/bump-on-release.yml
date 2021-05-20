@@ -1,4 +1,4 @@
-name: Bump package in dependent repos on release
+name: Bump package in dependent repos on releases
 
 on:
   release:
