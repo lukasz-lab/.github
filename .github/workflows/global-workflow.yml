@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: derberg/global-actions-support@a21b144ab3be4b6aea64c9646f599a58c2f0279b
+      - uses: https://github.com/RostiMelk/global-workflows-support#main
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
           files_to_ignore: global-workflow.yml, bump-on-release.yml
@@ -21,3 +21,5 @@ jobs:
           committer_username: santiago-bernabeu
           committer_email: my-email@me.com
           commit_message: "ci: update global workflows"
+          exclude_archived: true
+          topics_to_include: lysy,maniek
