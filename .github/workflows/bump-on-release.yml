@@ -18,3 +18,4 @@ jobs:
           repos_to_ignore: "piontek"
           committer_username: pomidor
           committer_email: pomidor@pomidor.com
+          packagejson_path: ./gleboko
