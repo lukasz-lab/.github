@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: RostiMelk/global-workflows-support@cb0c286d231bde197af2dc20269e6acbbef06c0f
+      - uses: derberg/global-workflows-support@v0.5.0
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
           files_to_ignore: global-workflow.yml
