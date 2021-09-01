@@ -16,7 +16,7 @@ jobs:
       - uses: derberg/global-workflows-support@v0.5.0
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
-          files_to_ignore: global-workflow.yml
+          files_to_ignore: global-workflow.yml,bump-on-release.yml
           repos_to_ignore: website,lukasz-lab.github.io
           committer_username: santiago-bernabeu
           committer_email: my-email@me.com
