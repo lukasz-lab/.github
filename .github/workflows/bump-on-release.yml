@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Bumping
-        uses: derberg/custom-dependabot-for-your-github-org@1ee3765097e16ec73fc60002afe3547f60c08da2
+        uses: derberg/custom-dependabot-for-your-github-org@50c05e92f32090b48739983a56219cde27edc5a3
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
           repos_to_ignore: "piontek"
