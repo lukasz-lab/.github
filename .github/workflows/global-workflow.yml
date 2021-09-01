@@ -16,7 +16,7 @@ jobs:
       - uses: RostiMelk/global-workflows-support@cb0c286d231bde197af2dc20269e6acbbef06c0f
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
-          files_to_ignore: global-workflow.yml, bump-on-release.yml
+          files_to_ignore: global-workflow.yml
           repos_to_ignore: website,lukasz-lab.github.io
           committer_username: santiago-bernabeu
           committer_email: my-email@me.com
