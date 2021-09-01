@@ -16,8 +16,5 @@ jobs:
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
           repos_to_ignore: "piontek"
-          packagejson_path: ./gleboko
           committer_username: pomidor
           committer_email: pomidor@pomidor.com
-          commit_message_prod: "fix: update internal production dependencies"
-          commit_message_dev: "chore: update internal development dependencies"
