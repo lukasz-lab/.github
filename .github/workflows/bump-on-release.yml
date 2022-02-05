@@ -19,4 +19,4 @@ jobs:
           committer_username: pomidor
           committer_email: pomidor@pomidor.com
           packagejson_path: ./gleboko
-          branch_name: dupa
+          branch_name: base_branch
