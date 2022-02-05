@@ -1,6 +1,6 @@
 {
   "name": "@asyncapi/generator",
-  "version": "v1.0.0-rc.3",
+  "version": "v1.9.0",
   "dependencies": {
     "@asyncapi/avro-schema-parser": "^0.2.0",
     "@asyncapi/openapi-schema-parser": "^2.0.0",
