@@ -12,10 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Bumping
-        uses: BOLT04/custom-dependabot-for-your-github-org@79ef59aaf6c33e1e00a342a45eb28cd138e7c08e
+        uses: derberg/npm-dependency-manager-for-your-github-org@8eb3fab53419906c29d3803cee28b3c24480a0b7
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
           repos_to_ignore: "piontek"
           committer_username: pomidor
           committer_email: pomidor@pomidor.com
           packagejson_path: ./gleboko
+          branch_name: dupa
