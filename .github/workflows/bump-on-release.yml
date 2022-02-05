@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Bumping
-        uses: derberg/npm-dependency-manager-for-your-github-org@bec81ec0d5dad7ceeaae133cfbd4369837c7fb6f
+        uses: derberg/npm-dependency-manager-for-your-github-org@54bf9114bc9a94b3efded9f520f5750a4b2d3825
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
           repos_to_ignore: "piontek"
