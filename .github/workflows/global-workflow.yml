@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: derberg/global-workflows-support@2b8865c427329b31d28256e235a75707eb3bc35d
+      - uses: derberg/global-workflows-support@412a68d6c3652a01c1b64175f5ca0af56452793c
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
           files_to_ignore: global-workflow.yml,bump-on-release.yml
@@ -28,4 +28,5 @@ jobs:
           committer_email: my-email@me.com
           commit_message: "ci: update global workflows"
           exclude_forked: true
+          branches: .*-release,main
           #topics_to_include: lysy,maniek
