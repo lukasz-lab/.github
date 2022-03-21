@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: derberg/global-workflows-support@365e6a1fc79f4eff66df21d4d20fe2f30ada511b
+      - uses: derberg/global-workflows-support@ed047735ffbc0780c7b941ab2a0fea9599a81b8c
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
           files_to_ignore: global-workflow.yml,bump-on-release.yml
