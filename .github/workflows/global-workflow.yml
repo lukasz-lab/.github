@@ -29,5 +29,6 @@ jobs:
           committer_email: my-email@me.com
           commit_message: "ci: update global workflows"
           exclude_forked: true
+          destination: dupa
           #branches: .*-release,main
           topics_to_include: lysy,maniek
