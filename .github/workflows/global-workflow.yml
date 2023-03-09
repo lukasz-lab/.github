@@ -19,11 +19,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c
-      - uses: derberg/global-workflows-support@2f48e4f584ebc8877fd506c65bcc70de179800e8
+      - uses: derberg/global-workflows-support@5861958dbd336c2567fb86d8a38f59c1e96eb34c
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
           patterns_to_ignore: .github/workflows/global-workflow.yml,.github/workflows/bump-on-release.yml
-          patterns_to_include: .github/workflows,CONTRIBUTING.md
+          patterns_to_include: .github/workflows
           #patterns_to_remove: CODE_OF_CONDUCT.md
           repos_to_ignore: website,lukasz-lab.github.io
           committer_username: santiago-bernabeu
