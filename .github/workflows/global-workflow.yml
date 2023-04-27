@@ -47,3 +47,16 @@ jobs:
           bot_branch_name: bot/update-files-from-global-repo
           #branches: .*-release,main
           topics_to_include: lysy,maniek
+      - uses: derberg/global-workflows-support@73c48dd4be9569f6cade4dca374987756d715dfb
+        with:
+          github_token: ${{ secrets.CUSTOM_TOKEN }}
+          patterns_to_ignore: .github/workflows/global-workflow.yml,.github/workflows/bump-on-release.yml
+          patterns_to_include: .github/workflows/dupa/utils.ts
+          #patterns_to_remove: CODE_OF_CONDUCT.md
+          repos_to_ignore: website,lukasz-lab.github.io
+          committer_username: santiago-bernabeu
+          committer_email: my-email@me.com
+          commit_message: "ci: update global workflows"
+          exclude_forked: true
+          #branches: .*-release,main
+          topics_to_include: lysy,maniek
