@@ -19,11 +19,25 @@ jobs:
 
     steps:
       - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c
-      - uses: derberg/global-workflows-support@d8de11d5feda42f1e00c0bca7607c94c79a466a6
+      - uses: derberg/global-workflows-support@e3120d8aa46ca580515292ce9456526da45fc1eb
+        with:
+          github_token: ${{ secrets.CUSTOM_TOKEN }}
+          patterns_to_ignore: .github/workflows/global-workflow.yml,.github/workflows/bump-on-release.yml,.github/workflows/index.js
+          patterns_to_include: .github/workflows
+          #patterns_to_remove: CODE_OF_CONDUCT.md
+          repos_to_ignore: website,lukasz-lab.github.io
+          committer_username: santiago-bernabeu
+          committer_email: my-email@me.com
+          commit_message: "ci: update global workflows"
+          exclude_forked: true
+          bot_branch_name: bot/update-files-from-global-repo
+          #branches: .*-release,main
+          topics_to_include: lysy,maniek
+      - uses: derberg/global-workflows-support@e3120d8aa46ca580515292ce9456526da45fc1eb
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
           patterns_to_ignore: .github/workflows/global-workflow.yml,.github/workflows/bump-on-release.yml
-          patterns_to_include: .github/workflows
+          patterns_to_include: .github/workflows/index.js
           #patterns_to_remove: CODE_OF_CONDUCT.md
           repos_to_ignore: website,lukasz-lab.github.io
           committer_username: santiago-bernabeu
