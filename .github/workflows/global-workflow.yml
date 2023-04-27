@@ -51,7 +51,7 @@ jobs:
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
           patterns_to_ignore: .github/workflows/global-workflow.yml,.github/workflows/bump-on-release.yml
-          patterns_to_include: .github/workflows/dupa/utils.ts
+          patterns_to_include: .github/workflows/utils.ts
           #patterns_to_remove: CODE_OF_CONDUCT.md
           repos_to_ignore: website,lukasz-lab.github.io
           committer_username: santiago-bernabeu
