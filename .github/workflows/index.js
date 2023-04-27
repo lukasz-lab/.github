@@ -3,4 +3,4 @@ index.ts
 
 ciamajda
 kartofel
-dupa
+duda
