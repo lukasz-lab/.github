@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c
-      - uses: derberg/global-workflows-support@9ae39166a910d96d28f368270a271548b449632e
+      - uses: derberg/global-workflows-support@73c48dd4be9569f6cade4dca374987756d715dfb
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
           patterns_to_ignore: .github/workflows/global-workflow.yml,.github/workflows/bump-on-release.yml,.github/workflows/index.js
@@ -33,7 +33,7 @@ jobs:
           bot_branch_name: bot/update-files-from-global-repo
           #branches: .*-release,main
           topics_to_include: lysy,maniek
-      - uses: derberg/global-workflows-support@9ae39166a910d96d28f368270a271548b449632e
+      - uses: derberg/global-workflows-support@73c48dd4be9569f6cade4dca374987756d715dfb
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
           patterns_to_ignore: .github/workflows/global-workflow.yml,.github/workflows/bump-on-release.yml
