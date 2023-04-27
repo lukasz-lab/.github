@@ -3,5 +3,5 @@ index.ts
 
 ciamajda
 kartofel
-duda
+dupa
 sraj
