@@ -19,17 +19,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c
-      - uses: derberg/global-workflows-support@5861958dbd336c2567fb86d8a38f59c1e96eb34c
+      - uses: derberg/global-workflows-support@c9e126edfa90c40f66a37245a70f6b941e6d9bb7
         with:
           github_token: ${{ secrets.CUSTOM_TOKEN }}
           patterns_to_ignore: .github/workflows/global-workflow.yml,.github/workflows/bump-on-release.yml
-          patterns_to_include: .github/workflows/.releaserc
+          patterns_to_include: .github/workflows
           #patterns_to_remove: CODE_OF_CONDUCT.md
           repos_to_ignore: website,lukasz-lab.github.io
           committer_username: santiago-bernabeu
           committer_email: my-email@me.com
           commit_message: "ci: update global workflows"
           exclude_forked: true
-          destination: ./
+          bot_branch_name: bot/update-files-from-global-repo
           #branches: .*-release,main
           topics_to_include: lysy,maniek
