@@ -2,3 +2,4 @@ index.ts
 
 
 ciamajda
+kartofel
