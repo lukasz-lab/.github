@@ -3,5 +3,6 @@ index.ts
 
 ciamajda
 kartofel
-dupa
+dupalog
 sraj
+console
