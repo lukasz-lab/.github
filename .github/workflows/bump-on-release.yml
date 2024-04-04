@@ -12,8 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Bumping
-        uses: derberg/npm-dependency-manager-for-your-github-org@af03d24e5b96720ab09884134e3f79dac6414019
+        uses: derberg/npm-dependency-manager-for-your-github-org@38f30a2c8004a7726857c577186c9dc93b252fa0
         with:
+          custom_id: "dependency update from asyncapi bot"
           github_token: ${{ secrets.CUSTOM_TOKEN }}
           repos_to_ignore: "piontek"
           committer_username: pomidor
