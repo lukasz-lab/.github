@@ -10,7 +10,7 @@ jobs:
   bump:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Bumping
         uses: derberg/npm-dependency-manager-for-your-github-org@38f30a2c8004a7726857c577186c9dc93b252fa0
         with:
